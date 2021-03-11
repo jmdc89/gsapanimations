@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import './App.css';
 import {TweenMax, Power3} from 'gsap';
 
@@ -7,6 +7,18 @@ function App() {
   let circle = useRef(null)
   let circleRed = useRef(null)
   let circleBlue = useRef(null)
+
+  const [state, setState] = useState(false);
+
+  const handleExpand = () => {
+    TweenMax.to(circleRed, .8, {width:200, height:200, ease: Power3.easeOut})
+    setState(true)
+  }
+
+  const handleShrink = () => {
+    TweenMax.to(circleRed, .8, {width:75, height:75, ease: Power3.easeOut})
+    setState(false)
+  }
 
   useEffect(() => {
     TweenMax.to(app, 0, {css: {visibility: 'visible'}})
@@ -26,6 +38,7 @@ function App() {
               ref={el => circle = el}
               className="circle"></div>
               <div
+              onClick={state !== true ? handleExpand : handleShrink}
               ref={el => circleRed = el}
               className="circle red"></div>
               <div
