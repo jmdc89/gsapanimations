@@ -1,8 +1,8 @@
 import React, {useRef, useEffect, useState} from 'react';
-import './App.css';
+import './Circles.css';
 import {TweenMax, Power3} from 'gsap';
 
-function App() {
+function Circles() {
   let app = useRef(null)
   let circle = useRef(null)
   let circleRed = useRef(null)
@@ -50,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default Circles;
