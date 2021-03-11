@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ImageReveal.scss";
-import People from "../images/vadim-sadovski--Q9YUzjHuis-unsplash.webp";
+import People from "../images/vadim-sadovski--Q9YUzjHuis-1440.webp";
 
 const ImageReveal = () => {
     return (
