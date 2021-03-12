@@ -8,7 +8,7 @@ import ImageReveal from './components/ImageReveal';
 ReactDOM.render(
   <React.StrictMode>
     {/* <Circles /> */}
-    <ImageReveal/>
+    {/* <ImageReveal/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
