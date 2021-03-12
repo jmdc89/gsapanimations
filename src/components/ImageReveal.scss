@@ -5,6 +5,7 @@
         height: 100vh;
         display: flex;
         align-items: center;
+        visibility: hidden;
     }
 }
 
@@ -20,7 +21,7 @@
         height: 100%;
         top:0;
         right: 0;
-        background: pink;
+        background: #FFF;
     }
     img {
         width: 770px;
